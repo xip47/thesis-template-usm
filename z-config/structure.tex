@@ -1,0 +1,74 @@
+% ------------------------------------------------------------------------------
+% CONFIGURACIÓN Y ESTRUCTURA DEL DOCUMENTO
+% ------------------------------------------------------------------------------
+% 
+% ------------------------------------------------------------------------------
+
+% ------------------------------------------------------------------------------
+% CONFIGURACIÓN DE LA TABLA DE CONTENIDO Y SECCIONES
+% ------------------------------------------------------------------------------
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+% ------------------------------------------------------------------------------
+% GLOSARIO
+% ------------------------------------------------------------------------------
+\makeglossaries
+
+% ------------------------------------------------------------------------------
+% REFERENCIAS USANDO BIBTEX
+% ------------------------------------------------------------------------------
+\bibliographystyle{apalike}
+\newcommand{\bibliografia}{bib/bibliografia}
+
+% ------------------------------------------------------------------------------
+% CONFIGURACIÓN - listing
+% ------------------------------------------------------------------------------
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+ 
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    frame=lines
+}
+\renewcommand{\lstlistingname}{\textsc{Código Fuente}}
+\lstset{style=mystyle}
+
+% ------------------------------------------------------------------------------
+% RENOMBRAMIENTOS
+% ------------------------------------------------------------------------------
+\newcommand*{\captionsource}[2]{%
+    \centering
+    \caption[{#1}]{%
+        #1 \textbf{Fuente:} #2%
+    }%
+}
+
+\addto\captionsspanish{%
+    \def\bibname{Referencias}%
+}
+
+% ------------------------------------------------------------------------------
+% OTROS
+% ------------------------------------------------------------------------------
+\renewcommand*{\familydefault}{\sfdefault}
+\parskip=.5\baselineskip
+\renewcommand{\baselinestretch}{1.25}
+\setlength{\marginparwidth}{3cm}

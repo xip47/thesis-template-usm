@@ -1,0 +1,47 @@
+% ------------------------------------------------------------------------------
+% TEMPLATE MEMORIA
+% ------------------------------------------------------------------------------
+% AUTHOR: Abdel Rojas S. a.k.a xip47
+% 
+% CRÉDITOS A:
+% -----------
+% Gabriel Ruiz: Proyecto construido a partir del documento de memoria
+% Yachan: Sistemas de comentarios al margen
+% ------------------------------------------------------------------------------
+
+\documentclass[letter, 11pt, oneside]{book}
+\input{z-config/packages}
+\input{z-config/structure}
+\input{z-config/macros}
+
+\begin{document}
+\frontmatter
+% ------------------------------------------------------------------------------
+% PORTADA
+% ------------------------------------------------------------------------------
+\portada
+\newpage
+\mbox{}
+\thispagestyle{empty}
+
+% ------------------------------------------------------------------------------
+% CONTENIDO
+% ------------------------------------------------------------------------------
+\input{00-init/main}
+\input{01-intro/main}
+\input{02-estado-del-arte/main}
+\input{03-propuesta/main}
+
+% ------------------------------------------------------------------------------
+% ANEXOS
+% ------------------------------------------------------------------------------
+\appendix
+\input{anexos/main}
+
+% ------------------------------------------------------------------------------
+% BIBLIOGRAFIA
+% ------------------------------------------------------------------------------
+\backmatter
+\bibliographystyle{unsrt}
+\bibliography{\bibliografia}
+\end{document}

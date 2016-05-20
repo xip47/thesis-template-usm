@@ -1,0 +1,27 @@
+% -------------------------------------------------------
+% CÓDIGOS
+% -------------------------------------------------------
+
+\begin{lstlisting}[caption=Resolución en R, language=r]
+	preg4<-function(poblacion)
+	{
+		tam <- c(10,20,50,100,1000)
+		i <- 1
+		medianas <-c()
+		png("4-10to1000.png", width=480, height=768)
+		par(mfrow=c(3,2))
+		for(n in tam)
+		{
+			while(i <= 100)
+			{
+				muestra = sample(poblacion, size=n)
+				medianas[i] <- median(muestra)
+				i <- i+1
+			}
+			print(medianas,digits=5)
+			hist(medianas,main=paste('Frecuencia n = ',n))
+			i <- 1
+		}
+		dev.off()
+	}
+\end{lstlisting}
