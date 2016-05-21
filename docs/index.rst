@@ -3,15 +3,19 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to thesis-template's documentation!
+TEMPLATE MEMORIA USM - LaTeX
 ===========================================
 
-Contents:
-
 .. toctree::
+   :caption: Contenido
+   :name: masterIndex
    :maxdepth: 2
 
-
+   content/requirements
+   content/install
+   content/alternative
+   content/template
+   content/publish
 
 Indices and tables
 ==================
@@ -19,4 +23,3 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-
