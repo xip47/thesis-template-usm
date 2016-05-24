@@ -12,7 +12,7 @@ LaTeX
 
 Repositorios + Opcional
 +++++++++++++++++++++++++++++
-* Github
+* Github: para que la redacción de la memoria posea control de versiones.
 
 Online - En una nube
 -----------------------------

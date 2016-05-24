@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-TEMPLATE MEMORIA USM - LaTeX
+Template Memoria USM - LaTeX
 ===========================================
 
 .. toctree::
@@ -15,6 +15,11 @@ TEMPLATE MEMORIA USM - LaTeX
    content/install
    content/alternative
    content/template
+   content/configuration
+   content/main
+   content/cover
+   content/chatpers
+   content/samples
    content/publish
 
 Indices and tables
