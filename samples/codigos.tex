@@ -2,6 +2,26 @@
 % CÓDIGOS
 % -------------------------------------------------------
 
+% -------------------------------------------------------
+% IMPRIMIR ÍNDICE DE CÓDIGOS
+% -------------------------------------------------------
+\renewcommand{\listingscaption}{Código Fuente}
+\renewcommand\listoflistingscaption{Índice de Códigos}
+\listoflistings
+
+% -------------------------------------------------------
+% IMPORTAR CÓDIGO - FORMATO RECOMENDADO
+% -------------------------------------------------------
+\begin{listing}[ht]
+    \inputminted{octave}{nombre_archivo}
+    \caption{Nombre del caption}
+    \label{listing:ref}
+\end{listing}
+
+
+% -------------------------------------------------------
+% IMPRIMIR CÓDIGO
+% -------------------------------------------------------
 \begin{lstlisting}[caption=Resolución en R, language=r]
 	preg4<-function(poblacion)
 	{
@@ -25,3 +45,9 @@
 		dev.off()
 	}
 \end{lstlisting}
+
+\begin{minted}{python}
+    def clear_data():
+        global TEST_DATA
+        TEST_DATA = {}
+\end{minted}

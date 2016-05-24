@@ -1,7 +1,7 @@
 % ------------------------------------------------------------------------------
 % CONFIGURACIÓN Y ESTRUCTURA DEL DOCUMENTO
 % ------------------------------------------------------------------------------
-% 
+%
 % ------------------------------------------------------------------------------
 
 % ------------------------------------------------------------------------------
@@ -22,34 +22,50 @@
 \newcommand{\bibliografia}{bib/bibliografia}
 
 % ------------------------------------------------------------------------------
-% CONFIGURACIÓN - listing
+% DEFINICIONES DE COLORES
 % ------------------------------------------------------------------------------
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
- 
+\definecolor{LightGray}{gray}{0.98}
+
+% ------------------------------------------------------------------------------
+% CONFIGURACIÓN - listing
+% ------------------------------------------------------------------------------
 \lstdefinestyle{mystyle}{
-    backgroundcolor=\color{backcolour},   
+    backgroundcolor=\color{backcolour},
     commentstyle=\color{codegreen},
     keywordstyle=\color{magenta},
     numberstyle=\tiny\color{codegray},
     stringstyle=\color{codepurple},
     basicstyle=\footnotesize,
-    breakatwhitespace=false,         
-    breaklines=true,                 
-    captionpos=b,                    
-    keepspaces=true,                 
-    numbers=left,                    
-    numbersep=5pt,                  
-    showspaces=false,                
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
     showstringspaces=false,
-    showtabs=false,                  
+    showtabs=false,
     tabsize=2,
     frame=lines
 }
 \renewcommand{\lstlistingname}{\textsc{Código Fuente}}
 \lstset{style=mystyle}
+
+% ------------------------------------------------------------------------------
+% CONFIGURACIÓN - minted
+% ------------------------------------------------------------------------------
+\newmintedfile[python]{python}{
+    frame=lines,
+    framesep=2mm,
+    baselinestretch=1.2,
+    bgcolor=LightGray,
+    fontsize=\footnotesize,
+    linenos
+}
 
 % ------------------------------------------------------------------------------
 % RENOMBRAMIENTOS
@@ -63,6 +79,22 @@
 
 \addto\captionsspanish{%
     \def\bibname{Referencias}%
+}
+
+\renewcommand{\listingscaption}{Código Fuente}
+\renewcommand\listoflistingscaption{Índice de Códigos}
+
+% ------------------------------------------------------------------------------
+% DIRECTORIOS DE FUENTES
+% ------------------------------------------------------------------------------
+\graphicspath
+{
+    {img/design/},
+    {img/01/},
+    {img/02/},
+    {img/03/},
+    {img/04/},
+    {img/05/},
 }
 
 % ------------------------------------------------------------------------------

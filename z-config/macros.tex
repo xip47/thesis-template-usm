@@ -20,9 +20,9 @@
             \vspace*{0.5cm}
                 \titulocarrera
             \vspace*{1cm}
-            
+
             \begin{tabular}[H]{l@{\hskip 0.3in} l}
-                \Large{Profesor Guía:} & \guia \\ 
+                \Large{Profesor Guía:} & \guia \\
                 \Large{Profesor Correferente:} & \correferente \\
             \end{tabular}
             \\
@@ -36,7 +36,7 @@
 % SISTEMA DE COMENTARIOS AL MARGEN - TODO
 % ------------------------------------------------------------------------------
 % Comentarios al margen. Incluyen nombre y fecha de realización.
-% 
+%
 % USO: \tipoComentario[iniciales]{día.mes}{comentario}
 %
 % TIPOS
@@ -49,7 +49,7 @@
             \textbf{[#2 \uppercase{#1}]:}~#3}
 }
 
-\newcommand{\todoexternal}[3][]{ 
+\newcommand{\todoexternal}[3][]{
     \todo[color={green!40},size=\small]{
             \textbf{[#2 \uppercase{#1}]:}~#3}
 }
@@ -58,3 +58,7 @@
     \todo[size=\small]{
             \textbf{[#2 \uppercase{#1}]:}~#3}
 }
+
+% ------------------------------------------------------------------------------
+% MACROS NUEVAS - PERSONALIZADAS
+% ------------------------------------------------------------------------------
