@@ -4,9 +4,9 @@ Nuevo Capítulo
 Para crear un nuevo capítulo en el template de memoria se den seguir siempre los
 mismo pasos.
 
-Crear carpeta en directorio raíz del proyecto con una enumeración para identificar
 Crear Carpeta de Capítulo
 -----------------------------
+Crear carpeta en directorio raíz del proyecto con una enumeración para identificar
 fácilmente el orden dentro del documento segudido de un nombre representativo.
 Ejemplo: para crear el capítulo 7 que aborde la  conclusión, se crea una carpeta
 con el nombre de *07-conclusion*.
