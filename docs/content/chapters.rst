@@ -23,7 +23,7 @@ Crear archivo *main.tex* dentro de la carpeta del capítulo. El contenido de est
 archivo debe ser el nombre del capítulo seguido de una introducción del mismo y
 posteriormente los imputs de los archivos de las secciones agregadas. Ejemplo:
 
-. code-block:: LaTeX
+.. code-block:: LaTeX
 
    \chatper{Conclusión}
    A continuación se presentan las conclusiones obtenidas por el objeto de estudio...
